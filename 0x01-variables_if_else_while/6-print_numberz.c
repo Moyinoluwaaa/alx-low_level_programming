@@ -7,7 +7,6 @@
 int main(void)
 {
 	int w = 0;
-	int e;
 
 	for(; w < 10; w++)
 	{
