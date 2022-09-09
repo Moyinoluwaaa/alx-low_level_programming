@@ -6,8 +6,6 @@
 */
 int main(void)
 {
-	int alph = 'a';
-
 	for (int alph='a'; alph <= 'z'; alph++)
 	{
 		if (alph == 'q' || alph == 'e')
