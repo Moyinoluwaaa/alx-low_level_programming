@@ -6,7 +6,7 @@
 */
 int main(void)
 {
-	int alph = 'a'
+	int alph = 'a';
 
 	for (alph; alph <= 'z'; alph++)
 	{
