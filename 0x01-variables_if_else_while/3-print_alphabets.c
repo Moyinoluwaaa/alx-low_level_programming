@@ -8,6 +8,7 @@ int main(void)
 {
 	int alph = 'a';
 	int upp = 'A';
+	
 	while (alph <= 'z')
 	{
 		putchar(alph);
@@ -17,7 +18,7 @@ int main(void)
 	{
 		putchar(upp);
 		upp++;
-        }
+	}
 	putchar('\n');
 	return (0);
 }
