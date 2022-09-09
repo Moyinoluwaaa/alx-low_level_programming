@@ -6,7 +6,7 @@
 /**
 * main - Entry point
 *
-* return ends the program
+* Return: ends the program
 */
 int main(void)
 {
