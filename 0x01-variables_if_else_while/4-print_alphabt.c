@@ -8,7 +8,7 @@ int main(void)
 {
 	int alph = 'a';
 
-	for (alph; alph <= 'z'; alph++)
+	for (; alph <= 'z'; alph++)
 	{
 		if (alph == 'q' || alph == 'e')
 	{
