@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include "main.h"
 void print_alphabet(void){
     int w = 'a';
     for (; w <= 'z'; w++)
