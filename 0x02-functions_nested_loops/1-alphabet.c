@@ -13,7 +13,7 @@ void print_alphabet(void){
 {
     putchar(w);
 }
-return (0);
+return;
 }
 
 
