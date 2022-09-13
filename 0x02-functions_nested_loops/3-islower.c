@@ -2,7 +2,7 @@
 /**
 * _islower - checks for lowercase
 *
-* c - is tested for
+* @c - is tested for
 * Return: ends the program
 */
 
@@ -13,5 +13,5 @@ int _islower(int c)
 	else
 		return (0);
 putchar('\n');
-return(0);
+return (0);
 }
