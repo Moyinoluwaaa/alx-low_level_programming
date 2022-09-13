@@ -2,7 +2,7 @@
 /**
 *main - Entry point
 *
-*print_alphabet - prints lowetrcase alphabet
+*print_alphabet - func that prints lowetrcase alphabet
 *
 *Return: ends the program
 */
