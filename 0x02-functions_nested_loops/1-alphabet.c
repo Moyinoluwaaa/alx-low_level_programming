@@ -1,7 +1,5 @@
 #include "main.h"
 /**
-*main - Entry point
-*
 *print_alphabet - func that prints lowetrcase alphabet
 *
 *Return: ends the program
