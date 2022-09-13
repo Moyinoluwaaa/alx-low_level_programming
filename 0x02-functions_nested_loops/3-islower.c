@@ -1,8 +1,7 @@
 #include "main.h"
 /**
 * _islower - checks for lowercase
-*
-* @c - is tested for
+*c - is tested for
 * Return: ends the program
 */
 
