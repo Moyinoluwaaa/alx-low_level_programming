@@ -3,7 +3,7 @@
  * _abs - func name
  * @n: the dtype
  *
- * Return - ends the program
+ * Return: ends the program
  */
 int _abs(int n)
 {
