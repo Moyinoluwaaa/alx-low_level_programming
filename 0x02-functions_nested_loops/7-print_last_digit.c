@@ -1,0 +1,17 @@
+#include "main.h"
+/**
+ * print_last_digit - funcc name
+ * @n: parameter to test
+ *
+ * Return: ends the program
+ */
+int print_last_digit(int n)
+{
+	n = n %  10;
+	if (n < 0)
+	{
+		n = -n;
+		putchar(n + '0');
+	}
+return (0);
+}
