@@ -1,6 +1,8 @@
 #include "main.h"
 /**
  * add - func name
+ * @a: param1
+ * @b: paramb
  *
  * Return: ends the prog
  */
