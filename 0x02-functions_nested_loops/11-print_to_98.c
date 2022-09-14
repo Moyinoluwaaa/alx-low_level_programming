@@ -30,7 +30,7 @@ void print_to_98(int n)
 				putchar(',');
                 putchar(' ');
 			}
-			printf("%d"' i);
+			printf("%d", i);
 		}
 	}
 	putchar('\n');
