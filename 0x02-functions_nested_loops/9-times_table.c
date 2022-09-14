@@ -21,7 +21,7 @@ while (a <= 9)
 
 			_putchar(multi + '0');
 		}
-		else if (rep < 10)
+		else if (multi < 10)
 		{
 			_putchar(' ');
 			_putchar(multi + '0');	
