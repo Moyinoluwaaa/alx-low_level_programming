@@ -18,7 +18,7 @@ void print_to_98(int n)
 				putchar(',');
                 putchar(' ');
 			}
-			putchar(i + '0');
+			printf("%d", i);
 		}
 	}
 	else
@@ -30,7 +30,7 @@ void print_to_98(int n)
 				putchar(',');
                 putchar(' ');
 			}
-			putchar(i + '0');
+			printf("%d"' i);
 		}
 	}
 	putchar('\n');
