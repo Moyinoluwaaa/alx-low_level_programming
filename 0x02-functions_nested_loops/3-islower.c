@@ -1,7 +1,7 @@
 #include "main.h"
 /**
 * _islower - checks for lowercase
-* @c - is tested for
+* @c: is the argument tested for
 *
 * Return: ends the program
 */
