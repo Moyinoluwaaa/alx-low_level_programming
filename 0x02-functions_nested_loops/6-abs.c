@@ -1,9 +1,9 @@
 #include "main.h"
 /**
- * _abs(int) - func name
+ * _abs - func name
  * @n: the dtype
  *
- * return - ends the program
+ * Return - ends the program
  */
 int _abs(int n)
 {
@@ -13,7 +13,7 @@ int _abs(int n)
 	}
 	else if (n > 0)
 	{
-		return(n * 1);
+		return (n * 1);
 	}
 	return (0);
 }
