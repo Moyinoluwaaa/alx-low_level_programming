@@ -2,6 +2,7 @@
 /**
  * print_numbers - func name
  *
+ * Return: zero
  */
 
 void print_numbers(void)
