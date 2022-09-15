@@ -1,17 +1,18 @@
 #include "main.h"
 /**
- * print_numbers - func name
+ * _isdigit - func name
+ * @c: param name
  *
- * Return: zero
+ * Return: ends
  */
 
 void print_numbers(void)
 {
-	int d;
-
-	for (d = 0; d <= 9; d++)
+	int d = '0';
+        
+	for (; d <= '9'; d++)
 	{
-		putchar(d + '0');
-	} 
+		putchar(d);
+	}  
 	putchar('\n');
 }
