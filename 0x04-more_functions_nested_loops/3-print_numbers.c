@@ -1,4 +1,5 @@
 #include "main.h"
+
 /**
  * print_numbers - func name
  *
@@ -13,6 +14,6 @@ void print_numbers(void)
 	{
 		putchar(i + '0');
 	}
-	putchar('\n');
+putchar('\n');
 return;
 }
