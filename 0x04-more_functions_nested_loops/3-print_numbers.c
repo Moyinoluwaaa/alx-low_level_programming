@@ -1,7 +1,6 @@
 #include "main.h"
 /**
- * _isdigit - func name
- * @c: param name
+ * print_numbers - func name
  *
  * Return: ends
  */
