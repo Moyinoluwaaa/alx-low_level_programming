@@ -4,7 +4,7 @@
  * print_line - func name
  * @n: param name
  *
- * Return: ends
+ * Return: void
  */
 
 void print_line(int n)
