@@ -16,8 +16,8 @@ void print_line(int n)
 		{
 		putchar(' ');
 		}
-		putchar('\n');
 		putchar('\\');
+		putchar('\n');
 	}
 	putchar('\n');
 }
