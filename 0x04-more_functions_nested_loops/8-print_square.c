@@ -2,8 +2,7 @@
 
 /**
  * print_square - func name
- * @size: param name
- *
+ * @size : param name
  * Return: ends
  */
 
