@@ -2,18 +2,17 @@
 
 /**
  * print_line - func name
- * @n: param name
+ * @n: parameter name
  *
  * Return: void
  */
-
 void print_line(int n)
-{ 
-int w;
-       
-	for (w = 0; w < n; w++)
+{
+	int i;
+
+	for (i = 0; i < n; i++)
 	{
 		putchar('_');
 	}
-putchar('\n');
+	putchar('\n');
 }
