@@ -9,8 +9,9 @@
 
 void print_line(int n)
 { 
-	int w = 0;
-
+	int w;
+       
+	w = 0;
 	while (w < n)
 	{
 		w++;
