@@ -8,14 +8,14 @@
  */
 void print_line(int n)
 {
-	int i,j;
+	int i, j;
 
 	for (i = 0; i < n; i++)
 	{
-		for (j = 0; j < i; j++)
-		{
+	for (j = 0; j < i; j++)
+	{
 		putchar(' ');
-		}
+	}
 		putchar('\\');
 		putchar('\n');
 	}
@@ -23,4 +23,5 @@ void print_line(int n)
 	{
 	putchar('\n');
 	}
+	return;
 }
