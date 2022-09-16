@@ -17,5 +17,5 @@ void print_line(int n)
 		w++;
 		putchar('_');
 	}
-putchar('\n');
+	putchar('\n');
 }
