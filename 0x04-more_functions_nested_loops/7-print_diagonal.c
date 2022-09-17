@@ -1,12 +1,12 @@
 #include "main.h"
 
 /**
- * print_line - func name
+ * print_diagonal - func name
  * @n: parameter name
  *
  * Return: void
  */
-void print_line(int n)
+void print_diagonal(int n)
 {
 	int i, j;
 
