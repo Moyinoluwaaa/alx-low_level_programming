@@ -1,9 +1,8 @@
 #include <stdio.h>
 
 /**
- * print_triangle - func name
+ * main - func name
  *
- * @size: parameter name
  * Return: ends
  */
     int main(void)
