@@ -5,7 +5,7 @@
  *
  * Return: ends
  */
-    int main(void)
+int main(void)
 {
 	long int x = 612852475143;
 	long int y;
