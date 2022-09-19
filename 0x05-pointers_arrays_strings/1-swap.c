@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * void swap_int - main fubnc
+ * swap_int - main fubnc
  * @a: a parameter
  * @b: another parameter
  */
