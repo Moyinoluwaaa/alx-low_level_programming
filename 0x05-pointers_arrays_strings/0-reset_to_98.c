@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdio.h>
 /** 
  * reset_to_98 - the func name
  * @n: param name
