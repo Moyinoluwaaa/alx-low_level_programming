@@ -11,7 +11,7 @@ int le = 0;
 
 for (w = 0;  s[w] != '\0' ; w++)
 {
-le ++;
+le++;
 }
 return (le);
 }
