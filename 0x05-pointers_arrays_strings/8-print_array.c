@@ -2,7 +2,7 @@
 /**
  * print_array - func name
  * @a: djd
- * @b: mty
+ * @n: mty
  * Return: xdf
  */
 
