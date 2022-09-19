@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * void _puts - main func name
+ * _puts - main func name
  * @str: para
  * Return: is void
  */
