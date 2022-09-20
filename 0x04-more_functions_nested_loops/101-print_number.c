@@ -34,18 +34,3 @@ for (; count >= 1; count /= 10)
 putchar(((m / count) % 10) + 48);
 }
 }
-
-int main(void)
-{
-    print_number(98);
-    putchar('\n');
-    print_number(402);
-    putchar('\n');
-    print_number(1024);
-    putchar('\n');
-    print_number(0);
-    putchar('\n');
-    print_number(-98);
-    putchar('\n');
-    return (0);
-}
