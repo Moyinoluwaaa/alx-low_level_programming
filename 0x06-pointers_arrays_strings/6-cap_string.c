@@ -20,4 +20,5 @@ for (j = 0; delimeters[j] != '\0'; j++)
 if (n[i] == delimeters[j] && n[i + 1] >= 'a' && n[i + 1] <= 'z')
 n[i + 1] = n[i + 1] - 32;
 }
+return (n);
 }
