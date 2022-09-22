@@ -7,8 +7,9 @@
 
 char *leet(char *n)
 {
- int i;
+int i;
 int j;
+
 char l[] = "ol_ea__t";
 
 for (i = 0; n[i] != '\0'; i++)
