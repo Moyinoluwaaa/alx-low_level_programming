@@ -1,15 +1,16 @@
 #include "main.h"
 
 /**
- * rot13r - func name
+ * rot13 - func name
  * @n: param
  * Return: xdf
  */
 
 char *rot13(char *n)
 {
-    int i;
+	int i;
 	int j;
+
 	char data1[] = "ABCDEFGHIJKLMNOPQRnTUVWXYZabcdefghijklmnopqrntuvwxyz";
 	char datarot[] = "NOPQRnTUVWXYZABCDEFGHIJKLMnopqrntuvwxyzabcdefghijklm";
 
