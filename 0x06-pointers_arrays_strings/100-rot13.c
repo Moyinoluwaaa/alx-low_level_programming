@@ -1,29 +1,29 @@
 #include "main.h"
-
 /**
- * rot13 - func name
- * @n: param
- * Return: xdf
+ * rot13 - encodes a string using rot13
+ * @s: input string.
+ * Return: the pointer to dest.
  */
 
-char *rot13(char *n)
+char *rot13(char *s)
 {
-int i;
-int j;
+int count = 0, i;
 
-char data1[] = "ABCDEFGHIJKLMNOPQRnTUVWXYZabcdefghijklmnopqrntuvwxyz";
-char datarot[] = "NOPQRnTUVWXYZABCDEFGHIJKLMnopqrntuvwxyzabcdefghijklm";
+char alphabet[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+char rot13[] = "nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM";
 
-for (i = 0; n[i] != '\0'; i++)
+while (*(s + count) != '\0')
 {
-for (j = 0; j < 52; j++)
+for (i = 0; i < 52; i++)
 {
-if (n[i] == data1[j])
+if (*(s + count) == alphabet[i])
 {
-n[i] = datarot[j];
+*(s + count) = rot13[i];
 break;
 }
 }
+count++;
 }
-return (n);
+
+return (s);
 }
