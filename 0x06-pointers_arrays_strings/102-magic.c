@@ -1,4 +1,8 @@
 #include <stdio.h>
+/**
+ * main - func name
+ * Return: is a nio
+ */
 
 int main(void)
 {
