@@ -9,7 +9,7 @@
 
 unsigned int _strspn(char *s, char *accept)
 {
-int i, j, k;
+int i, j;
 
 for (i = 0; s[i] != '\0'; i++)
 {
@@ -22,15 +22,4 @@ return(i);
 }
 } 
 return(i);
-}
-
-int main(void)
-{
-    char *s = "hello, world";
-    char *f = "oleh";
-    unsigned int n;
-
-    n = _strspn(s, f);
-    printf("%u\n", n);
-    return (0);
 }
