@@ -20,6 +20,6 @@ if (accept[j] == '\0')
 return (i);
 }
 }
-} 
+}
 return (i);
 }
