@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _strspn - the func name
+ * _strpbrk - the func name
  * @s: para1
  * @accept: para2
  * Return: returns the value
@@ -20,6 +20,6 @@ if (accept[j] == s[i])
 return (s + i);
 }
 }
-} 
+}
 return (0);
 }
