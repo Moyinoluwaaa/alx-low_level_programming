@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _factorial - the func name
+ * factorial - the func name
  * @n: para1
  * Return: returns the value
  */
@@ -16,5 +16,5 @@ else if (n == 0)
 {
 return (1);
 }
-return (n * factorial(n-1));
+return (n * factorial(n - 1));
 }
