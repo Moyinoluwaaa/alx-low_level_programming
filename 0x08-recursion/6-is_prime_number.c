@@ -1,8 +1,9 @@
 #include "main.h"
 
 /**
- * is_prime_number - the func name
- * @s: para1
+ * prime_check - the func name
+ * @f: para1
+ * @p: para2
  * Return: returns the value
  */
 
