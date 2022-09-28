@@ -1,14 +1,14 @@
-<<<<<<< Updated upstream
 #include "main.h"
 
 /**
- * _sqrt_recursion - the func name
- * @n: para1
+ * sqrt_check - the func name
+ * @g: para1
+ * @c: para2
  * Return: returns the value
  */
 
 
- int sqrt_check(int g, int c)
+int sqrt_check(int g, int c)
 {
 if (g * g == c)
 return (g);
@@ -31,5 +31,3 @@ if (n == 0)
 return (0);
 return (sqrt_check(1, n));
 }
-=======
->>>>>>> Stashed changes
