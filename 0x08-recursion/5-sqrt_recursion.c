@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 #include "main.h"
 
 /**
@@ -30,3 +31,5 @@ if (n == 0)
 return (0);
 return (sqrt_check(1, n));
 }
+=======
+>>>>>>> Stashed changes
