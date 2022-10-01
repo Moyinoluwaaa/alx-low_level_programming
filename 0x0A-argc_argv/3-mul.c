@@ -5,21 +5,14 @@
  * @argv: jkl
  * Return: gives feedback
  */
-int main(int argc __attribute__((unused)), char *argv[])
+int main(int argc, char *argv[])
 {
-int i, mul = 1;
-
-for (i = 1; i < argc; i++)
+if (argc != 3)
 {
-mul *= atoi(argv[i]);
-printf("%d", mul);
+printf("Error");
 printf("\n");
+return (1);
 }
-if (argc < 3)
-{
-    printf("Error");
-    printf("\n");
-    return (1);
-}
+printf("%d \n", atoi(argv[1]) * atoi(argv[2]));
 return (0);
 }
