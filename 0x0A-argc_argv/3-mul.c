@@ -15,5 +15,11 @@ mul *= atoi(argv[i]);
 printf("%d", mul);
 printf("\n");
 }
+if (argc < 3)
+{
+    printf("Error");
+    printf("\n");
+    return (1);
+}
 return (0);
 }
