@@ -22,7 +22,10 @@ for (j = 0; s2[j] != '\0'; i++, j++)
 u[i] = s2[j];
 }
 if (u == NULL)
+{
+free(u);
 return (NULL);
+}
 if (s1 == NULL)
 s1 = "";
 if (s2 == NULL)
