@@ -8,28 +8,34 @@
 
 char *str_concat(char *s1, char *s2)
 {
-char *u;
-unsigned int i = 0, j = 0;
+char *strout;
+	unsigned int i, j, k, limit;
 
-if (s1 == NULL)
-s1 = "";
-if (s2 == NULL)
-s2 = "";
+	if (s1 == NULL)
+		s1 = "";
+	if (s2 == NULL)
+		s2 = "";
 
-u = malloc(sizeof(char) * (i + j + 1));
+	for (i = 0; s1[i] != '\0'; i++)
+		;
 
-if (u == NULL)
-{
-free(u);
-return (NULL);
-}
-for (; s1[i] != '\0'; i++)
-{
-u[i] = s1[i];
-}
-for (j = 0; s2[j] != '\0'; i++, j++)
-{
-u[i] = s2[j];
-}
-return (u);
+	for (j = 0; s2[j] != '\0'; j++)
+		;
+
+	strout = malloc(sizeof(char) * (i + j + 1));
+
+	if (strout == NULL)
+	{
+		free(strout);
+		return (NULL);
+	}
+
+	for (k = 0; k < i; k++)
+		strout[k] = s1[k];
+
+	limit = j;
+	for (j = 0; j <= limit; k++, j++)
+		strout[k] = s2[j];
+
+	return (strout);
 }
