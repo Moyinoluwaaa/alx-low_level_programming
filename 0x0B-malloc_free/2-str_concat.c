@@ -9,11 +9,11 @@
 char *str_concat(char *s1, char *s2)
 {
 char *u;
-unsigned int i, j;
+unsigned int i = 0, j = 0;
 
-u = (char *)malloc(sizeof(char) * i + j + 1);
+u = (char *)malloc(sizeof(char) * (i + j + 1));
 
-for (i = 0; s1[i] != '\0'; i++)
+for (; s1[i] != '\0'; i++)
 {
 u[i] = s1[i];
 }
