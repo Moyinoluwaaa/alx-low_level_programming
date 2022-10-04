@@ -8,24 +8,33 @@
 
 int **alloc_grid(int width, int height)
 {
-unsigned int i,j;
-int **a;
+int **gridout;
+int i, j;
 
-if (width <= 0)
+if (width < 1 || height < 1)
 return (NULL);
-if (height <= 0)
-return (NULL);
-a = malloc(sizeof(int) * (i+j));
-if (a == NULL)
-return (NULL);
-for (i = 0; i < width; i++)
+
+gridout = malloc(height * sizeof(int *));
+if (gridout == NULL)
 {
-a[i] = malloc(width * sizeof(int));
-for (j = 0; j < height; j++)
+free(gridout);
+return (NULL);
+}
+
+for (i = 0; i < height; i++)
 {
-a[j] = malloc(height * sizeof(int));
-a[i][j] = 0;
+gridout[i] = malloc(width * sizeof(int));
+if (gridout[i] == NULL)
+{
+for (i--; i >= 0; i--)
+free(gridout[i]);
+free(gridout);
+return (NULL);
 }
 }
-return (a);
+for (i = 0; i < height; i++)
+for (j = 0; j < width; j++)
+gridout[i][j] = 0;
+return (gridout);
+
 }
