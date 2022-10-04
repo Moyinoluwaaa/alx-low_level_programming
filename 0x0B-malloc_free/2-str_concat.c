@@ -16,7 +16,7 @@ s1 = "";
 if (s2 == NULL)
 s2 = "";
 
-u = (char *)malloc(sizeof(char) * (i + j + 1));
+u = malloc(sizeof(char) * (i + j + 1));
 
 if (u == NULL)
 {
