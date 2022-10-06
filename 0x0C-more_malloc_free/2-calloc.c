@@ -18,4 +18,4 @@ return (NULL);
 if (meme == NULL)
 return (NULL);
 return (meme);
-} 
+}
