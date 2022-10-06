@@ -20,5 +20,5 @@ if (meme == NULL)
 return (NULL);
 for (i = 0; i < (size * nmemb); i++)
 meme[i] = 0;
-return (meme);
+return ((void *)meme);
 }
