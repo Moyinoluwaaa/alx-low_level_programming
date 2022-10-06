@@ -12,9 +12,7 @@ char *meme;
 unsigned int i;
 
 meme = malloc(size * nmemb);
-if (nmemb == 0)
-return (NULL);
-if (size == 0)
+if (nmemb == 0 || size == 0)
 return (NULL);
 if (meme == NULL)
 return (NULL);
