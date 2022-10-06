@@ -1,34 +1,51 @@
 #include "main.h"
 
 /**
- * *string_nconcat - frees a 2 dimensional grid.
- * @s1: malloc
- * @s2: second
- * @n: number of strings in s2
- * Return: no return
+ * string_nconcat - concatenates two strings.
+ * @s1: first string
+ * @s2: second string
+ * @n: index
+ * Return: char pointer
  */
+
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-char *f;
-unsigned int i, a = 0, b = 0;
+	char *p;
+	unsigned int size1 = 0, size2 = 0, i;
 
-f = malloc(sizeof(char *) * (a + b + 1));
-if (f == NULL)
-return (NULL);
-for (; s1[a]; a++)
-;
-if (s1 == NULL)
-s1 = "";
-for (; s2[b]; b++)
-;
-if (s2 == NULL)
-s2 = "";
-if (b > n)
-b = n;
-for (i = 0; i < a; i++)
-f[i] = s1[i];
-for (i = 0; i < b; i++)
-f[a + i] = s2[i];
-f[a + b] = '\0';
-return (f);
+	if (s1 == NULL)
+		s1 = "";
+
+	if (s2 == NULL)
+		s2 = "";
+
+	while (s1[size1] != '\0')
+	{
+		size1++;
+	}
+
+	while (s2[size2] != '\0')
+	{
+		size2++;
+	}
+
+	if (n > size2)
+	n = size2;
+	p = malloc((size1 + n + 1) * sizeof(char));
+
+	if (p == NULL)
+		return (0);
+
+	for (i = 0; i < size1; i++)
+	{
+		p[i] = s1[i];
+	}
+
+	for (; i < (size1 + n); i++)
+	{
+		p[i] = s2[i - size1];
+	}
+	p[i] = '\0';
+
+return (p);
 }
