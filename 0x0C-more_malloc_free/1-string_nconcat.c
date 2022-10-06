@@ -3,7 +3,7 @@
 /**
  * *string_nconcat - frees a 2 dimensional grid.
  * @s1: malloc
- * @s2: second 
+ * @s2: second
  * @n: number of strings in s2
  * Return: no return
  */
@@ -15,10 +15,12 @@ int i, a, b;
 f = malloc(sizeof(char *) * (a + b + 1));
 if (f == NULL)
 return (NULL);
-for (a = 0; s1[a]; a++);
+for (a = 0; s1[a]; a++)
+;
 if (s1 == NULL)
 s1 = "";
-for (b = 0; s2[b]; b++);
+for (b = 0; s2[b]; b++)
+;
 if (s2 == NULL)
 s2 = "";
 if (b > n)
