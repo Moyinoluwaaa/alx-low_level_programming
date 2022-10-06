@@ -28,5 +28,5 @@ f[i] = s1[i];
 for (i = 0; i < b; i++)
 f[a + i] = s2[i];
 f[a + b] = '\0';
-return(f);
+return (f);
 }
