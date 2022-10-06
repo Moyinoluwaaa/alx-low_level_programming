@@ -1,8 +1,8 @@
 #include "main.h"
 /**
- * *str_concat - creates array
- * @s1: sizeof it
- * @s2: wjw
+ * *_calloc - creates array
+ * @nmemb: sizeof it
+ * @size: wjw
  * Return: returns
  */
 
