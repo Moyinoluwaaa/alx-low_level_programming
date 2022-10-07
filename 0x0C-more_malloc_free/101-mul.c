@@ -23,7 +23,16 @@ int i, j;
 		}
 
 	}
+<<<<<<< HEAD
 	mul = atol(argv[1]) *  atol(argv[2]);
 	printf("%lu\n", mul);
 return (0);
 }
+=======
+	if (!a)
+		_putchar('0');
+	_putchar('\n');
+	free(result);
+	return (0);
+}
+>>>>>>> 3f2623e16faffe87dfad76bb72d62243f8a9e5dd
