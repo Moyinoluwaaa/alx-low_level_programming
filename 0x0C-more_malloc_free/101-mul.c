@@ -23,15 +23,7 @@ int i, j;
 		}
 
 	}
-
 	mul = atol(argv[1]) *  atol(argv[2]);
 	printf("%lu\n", mul);
 return (0);
-}
-
-	if (!a)
-		putchar('0');
-	putchar('\n');
-	free(result);
-	return (0);
 }
