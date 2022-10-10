@@ -5,6 +5,6 @@
  */
 int main(void)
 {
-printf("Name of source file: %s\n", __FILE__);
+putchar(__FILE__);
 return (0);
 }
