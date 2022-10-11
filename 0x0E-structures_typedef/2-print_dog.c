@@ -1,32 +1,16 @@
 #include "dog.h"
-#include <stdio.h>
+
 /**
- * print_dog - the declared
- * @d: var
- * Description: This struct is for dog
+ * print_dog - prints a struct dog
+ * @d: struct dog
  */
+
 void print_dog(struct dog *d)
 {
-if (d == 0)
+if (d)
 {
-return;
-}
-if (d->name == 0)
-printf("Name:  (nil)\n");
-else
-{
-printf("Name: %s\n", d->name);
-}
-if (d->age == 0)
-printf("Age:  (nil)\n");
-else
-{
+printf("Name: %s\n", d->name ? d->name : "(nil)");
 printf("Age: %f\n", d->age);
-}
-if (d->owner == 0)
-printf("Name:  (nil)\n");
-else
-{
-printf("Owner: %s\n", d->owner);
+printf("Owner: %s\n", d->owner ? d->owner : "(nil)");
 }
 }
