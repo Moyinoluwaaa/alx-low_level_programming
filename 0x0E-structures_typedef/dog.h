@@ -3,7 +3,6 @@
 /**
  * struct dog - short desc
  */
-typedef struct dog;
 typedef struct dog
 {
 char *name;
