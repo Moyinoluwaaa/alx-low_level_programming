@@ -1,5 +1,5 @@
 #include "dog.h"
-#include <stdio.h>
+
 /**
  * new_dog - the declared
  * @name: var
