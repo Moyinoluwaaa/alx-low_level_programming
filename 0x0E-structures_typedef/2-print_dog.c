@@ -1,10 +1,7 @@
 #include "dog.h"
 /**
- * init_dog - the declared
+ * print_dog - the declared
  * @d: var
- * @name: var
- * @age: bsj
- * @owner: djd
  * Description: This struct is for dog
  */
 void print_dog(struct dog *d)
