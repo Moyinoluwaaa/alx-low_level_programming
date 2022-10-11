@@ -1,83 +1,82 @@
 #include "dog.h"
 
 /**
- * new_dog - creates a new dog
- * @name: name of dog
- * @age: age of dog
- * @owner: owner of dog
- * Return: malloced dog_t
+ * _copy  -   Make a copy of passed in argument
+ * @src:      Data to make copy of
+ * Return:    Pointer
+ */
+
+char *_copy(char *src)
+{
+	char *ptr;
+	int i, len;
+
+	if (src == NULL)
+	{
+		return (NULL);
+	}
+
+	for (len = 0; src[len] != '\0'; len++)
+		;
+
+	ptr = malloc(sizeof(char) * (len + 1));
+
+	if (ptr == NULL)
+	{
+		return (NULL);
+	}
+
+	for (i = 0; src[i] != '\0'; i++)
+	{
+		ptr[i] = src[i];
+	}
+
+	ptr[i] = '\0';
+	return (ptr);
+}
+
+/**
+ * new_dog     - Create a new dog variable
+ * @name:        Name of the dog
+ * @age:         Age of the dog
+ * @owner:       Owner of the dog
+ * Return:       Pointer to new dog variable
  */
 
 dog_t *new_dog(char *name, float age, char *owner)
 {
-char *n, *o;
-dog_t *new_dog = malloc(sizeof(dog_t));
+	dog_t *snoopie;
+	char *new_name, *new_owner;
 
-if (!new_dog || !name || !owner)
-{
-return (NULL);
-}
-n = malloc(_strlen(name) + 1);
-if (!n)
-{
-return (free(new_dog), NULL);
-}
-n = _strdup(name);
-new_dog->name = n;
-o = malloc(_strlen(owner) + 1);
-if (!o)
-{
-return (free(new_dog->name), free(new_dog), NULL);
-}
-o = _strdup(owner);
-new_dog->owner = o;
-new_dog->age = age;
-return (new_dog);
-}
+	if (name == NULL || owner == NULL)
+	{
+		return (NULL);
+	}
 
-/**
- * _strlen - returns the length of a string
- * @s: string s
- * Return: length of string
- */
+	snoopie = malloc(sizeof(dog_t));
+	if (snoopie == NULL)
+	{
+		return (NULL);
+	}
 
-int _strlen(char *s)
-{
-char *p = s;
+	new_name = _copy(name);
+	if (new_name == NULL)
+	{
+		free(snoopie);
+		return (NULL);
+	}
+	(*snoopie).name = new_name;
 
-while (*s)
-{
-s++;
-}
-return (s - p);
-}
+	(*snoopie).age = age;
 
-/**
- * _strdup - returns a pointer to a newly allocated space in memory,
- * which contains a copy of the string given as a parameter.
- * @str: string to be copied
- * Return: copied string
- */
+	new_owner = _copy(owner);
+	if (new_owner == NULL)
+	{
+		free((*snoopie).name);
+		free(snoopie);
+		return (NULL);
+	}
+	(*snoopie).owner = new_owner;
 
-char *_strdup(char *str)
-{
-int i, len;
-char *copy;
-
-if (!str)
-{
-return (NULL);
-}
-len = _strlen(str);
-copy = malloc(sizeof(char) * len + 1);
-if (!copy)
-{
-return (NULL);
-}
-for (i = 0; i < len; i++)
-{
-copy[i] = str[i];
-}
-copy[i] = 0;
-return (copy);
+	return (snoopie);
 }
