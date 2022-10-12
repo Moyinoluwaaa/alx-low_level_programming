@@ -3,6 +3,7 @@
  * print_name - prints a name
  * @name: param
  * @f: param
+ * Return: rer
  */
 void print_name(char *name, void (*f)(char *))
 {
